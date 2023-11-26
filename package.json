@@ -1,0 +1,13 @@
+{
+  "name": "first-employee-tracker",
+  "version": "1.0.0",
+  "description": "the information we builind is called \"content managment system(CMS). \r in this assigment we will build a comman-line application from scratch to manage a company emloyee database. \r we will use",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

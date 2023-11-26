@@ -37,10 +37,11 @@ function startApp() {
           'Add roles',
           'Veiw all departments'
       ]
-  })
-}.then((answer) => {
-
+}).then((answer) =>{
+  
 })
+}
+
 
 startApp();
   
