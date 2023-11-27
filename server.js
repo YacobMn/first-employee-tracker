@@ -7,9 +7,9 @@ const db = mysql.createConnection(
     user: 'root',
     // MySQL password
     password: 'Asmera1991@',
-    database: 'ariair_db'
+    database: 'eriair_db'
   },
-  console.log(`Connected to the movies_db database.`)
+  console.log(`Connected to the eriair_db database.`)
 );
 
 function getEmployees(){
@@ -79,7 +79,7 @@ function startApp() {
   }else if ("Update employee roles" === answer.employee){
     getEmployees()
   } else if ("Add roles" === answer.employee){
-
+    getRoles()
   } else if ("add departments" === answer.employee){
     inquirer.prompt([
       {
