@@ -16,6 +16,7 @@ function getEmployees(){
     db.query('SELECT * FROM employee', function (err, results) {
         if(err) throw err;
         console.table(results);
+        startApp()
       });
 }
 
@@ -23,6 +24,7 @@ function getRoles(){
   db.query('SELECT * FROM roles' , function (err, results) {
       if(err) throw err;
       console.table(results);
+      startApp()
     });
 }
 
@@ -30,12 +32,14 @@ function getDepartments(){
   db.query('SELECT * FROM department', function (err, results) {
       if(err) throw err;
       console.table(results);
+      startApp()
     });
 }
 function addDepartment(answers){
   db.query('insert into department (name) values (?)', [answers.department_name], (err, results)=>{
     if(err) throw err;
         console.table(results);
+        startApp()
   })
 }
 
@@ -43,12 +47,14 @@ function addRole(answers){
   db.query('insert into role (title, salary, department_id) values (?,?,?)', [answers.title, answers.salary, answers.department_id], (err, results)=>{
     if(err) throw err;
         console.table(results);
+        startApp()
   })
 }
 function addEmployee(answers){
   db.query('insert into employee (first_name, last_name, role_name, manager_id ) values (?, ?, ?, ?)', [answers.first_name, answers.last_name, answers.role_name, answers.manager_id], (err, results)=>{
     if(err) throw err;
         console.table(results);
+        startApp()
   })
 }
 
